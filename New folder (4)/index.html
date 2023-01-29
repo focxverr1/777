@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>
+		g
+	</title>
+
+	<style>
+		.div {
+			height: 100px;
+			width: 200px;
+			margin: 0 auto;
+			color: white;
+		}
+
+		#div1 {
+			background: rgb(128, 0, 0);
+		}
+
+		#div2 {
+			background: rgb(255, 170, 0);
+		}
+	</style>
+</head>
+
+<body style="text-align:center;">
+
+
+	
+	<p id="GFG_UP"></p>
+
+	<div class="div" id="div1"></div>
+	<br>
+
+	<button onClick="GFG_Fun()">
+		click here
+	</button>
+	
+	<script>
+		var el_up = document.getElementById('GFG_UP');
+		el_up.innerHTML = "Click on button to "
+						+ "change the ID of box.";
+						
+		function GFG_Fun() {
+			document.getElementById('div1').id = 'div2';
+		}
+	</script>
+</body>
+
+</html>
